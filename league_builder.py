@@ -41,23 +41,5 @@ def main():
         with open("{}.txt".format("chafik"),"a") as file_save:
             file_save.write("kiwee")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 if __name__ == "__main__":
     main()
