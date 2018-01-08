@@ -48,7 +48,7 @@ def main():
             file.write("{}, {}, {}" .format(player["Name"],player["Soccer Experience"],player["Guardian Name(s)"]) +"\n")
 
     for player in total_players:
-        with open("{}.txt".format(adding_hyphen(player["Name"])),"a" ) as player_file: # called the function that calls hypen to add to name
+        with open("{}.txt".format(adding_hyphen(player["Name"])),"w" ) as player_file: # called the function that calls hypen to add to name
             player_file.write("Dear {}, \n".format(player["Guardian Name(s)"]))
             player_file.write("Hello {}, {} Welcome to the {} team big welcome your training starts at {} \n".format(player["Name"],player["Guardian Name(s)"],player["teamname"],player["time"]))
 
